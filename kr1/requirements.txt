@@ -1,0 +1,6 @@
+re
+pymorphy2
+matplotlib.pyplot
+nltk.corpus
+nltk.probability
+nltk.tokenize
