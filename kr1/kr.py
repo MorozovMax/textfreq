@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 from nltk.probability import FreqDist
 from nltk.tokenize import word_tokenize
 
-filename = input('Введите имя файла')
+filename = input('Введите имя файла: ')
 morph = pymorphy2.MorphAnalyzer()
 stop_words = set(stopwords.words('russian'))
 
@@ -60,7 +60,7 @@ print(fdist_forms.most_common(50))
 
 
 #Топ 50 лемм
-fdist_lemma.most_common(50)
+print(fdist_lemma.most_common(50))
 
 
 # In[ ]:
