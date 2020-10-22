@@ -1,6 +1,4 @@
 re
 pymorphy2
 matplotlib
-nltk.corpus
-nltk.probability
-nltk.tokenize
+nltk
