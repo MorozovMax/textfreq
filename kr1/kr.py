@@ -47,12 +47,14 @@ plt.grid()
 plt.title('Закон Ципфа для фактических данных')
 plt.plot(freq_forms)
 plt.plot(freq_lemma)
+plt.show()
 
 
 # In[6]:
 
 
 #Топ 50 словоформ
+print('Топ 50 словоформ:')
 print(fdist_forms.most_common(50))
 
 
@@ -60,6 +62,7 @@ print(fdist_forms.most_common(50))
 
 
 #Топ 50 лемм
+print('Топ 50 лемм:')
 print(fdist_lemma.most_common(50))
 
 
