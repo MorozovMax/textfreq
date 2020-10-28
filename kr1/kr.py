@@ -18,7 +18,7 @@ stop_words = set(stopwords.words('russian'))
 #Токенизация, и очистка слов. Получаю список словоформ и лемм.
 words = word_tokenize(open(filename, encoding='utf8').read(), language = 'russian')
 clear_words = re.findall(r'(?:\s|\b)([а-яА-Я]+)(?:\s|\b)', ' '.join(words))
-words_forms = [word for word in clear_words if not word in stop_words]
+words_forms = [word for word in clear_words if not word.lower() in stop_words]
 lemmatized_words=[morph.parse(word)[0].normal_form for word in words_forms]
 
 #Списки словоформ и лемм с их частотами
